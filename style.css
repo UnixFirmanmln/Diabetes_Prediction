@@ -1,0 +1,151 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+
+body
+{
+	background: rgb(57,255,130);
+	background: linear-gradient(90deg, rgba(57,255,130,1) 0%, rgba(121,249,204,1) 32%, rgba(0,212,255,1) 100%);
+}
+
+.title
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 550;
+	margin: .5cm 0 1cm 0;
+}
+
+.d-flex-row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1cm 0 2cm 0;
+}
+
+.d-flex-col
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.container
+{
+	position: relative;
+	/*width: 5cm;*/
+	margin: 0 1.5cm 0 1.5cm;
+	border-radius: 10px;
+	border: 1px solid grey;
+	background: whitesmoke;
+	width: 400px;
+  	background: white;
+  	border-radius: 10px;
+  	box-shadow: 20px 20px 25px rgba(0,0,0,0.05);
+}
+
+.inp-form
+{
+	margin-left: 1cm;
+}
+
+form .inp-form
+{
+  	position: relative;
+  	border-bottom: 2px solid #adadad;
+  	margin: 1cm 1cm 1cm 1cm;
+}
+
+.inp-form input
+{
+  	width: 100%;
+  	padding: 0 5px;
+  	height: 40px;
+  	font-size: 16px;
+  	border: none;
+  	background: none;
+  	outline: none;
+}
+
+.inp-form label
+{
+  	position: absolute;
+  	top: 50%;
+  	left: 5px;
+  	color: transparent;
+  	transform: translateY(-50%);
+  	font-size: 16px;
+  	pointer-events: none;
+  	transition: .5s;
+}
+
+.inp-form span::before
+{
+  	content: '';
+  	position: absolute;
+  	top: 40px;
+  	left: 0;
+  	width: 0%;
+  	height: 2px;
+  	background: #2691d9;
+  	transition: .5s;
+}
+
+.inp-form input:focus ~ label
+{
+  	top: -5px;
+  	color: #2691d9;  
+}
+
+.inp-form input:focus ~ span::before
+{
+  	width: 100%;
+}
+
+button
+{
+	margin: 0 0 1cm 2cm;
+}
+
+button[type="submit"]
+{
+  	width: 60%;
+  	height: 40px;
+  	border: 1px solid;
+  	background: #2691d9;
+  	border-radius: 25px;
+  	font-size: 18px;
+  	color: #e9f4fb;
+  	font-weight: 700;
+  	cursor: pointer;
+  	outline: none;
+}
+
+button[type="submit"]:hover
+{
+  	border-color: #2691d9;
+  	transition: .5s;
+}
+
+.txt-outcome
+{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0 0 .3cm 1.5cm;
+}
+
+.outcomebx
+{
+	height: 7cm;
+}
