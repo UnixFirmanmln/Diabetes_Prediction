@@ -6,71 +6,73 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Diabetes Prediction</title>
 </head>
-<body>
+<body> 
 	<div class="title">Diabetes Prediction</div>
 	<div class="d-flex-row">
 		<div class="container">
-			<form method="" action="">
+			<form method="post" action="">
 				<div class="inp-form">
-					<input type="number" name="Pregnancies" placeholder="Pregnancies. . .">
+					<input type="number" name="pregnancies" id="id_pregnancies" placeholder="Pregnancies. . .">
 					<span></span>
 					<label>Pregnancies</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="Glucose" placeholder="Glucose. . .">
+					<input type="number" name="Glucose" id="id_glucose" value="glucose" placeholder="Glucose. . .">
 					<span></span>
 					<label>Glucose</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="BloodPressure" placeholder="BloodPressure. . .">
+					<input type="number" name="BloodPressure" id="id_bloodPressure" value="bloodPressure" placeholder="BloodPressure. . .">
 					<span></span>
 					<label>BloodPressure</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="SkinThickness" placeholder="SkinThickness. . .">
+					<input type="number" name="SkinThickness" id="id_skinThickness" value="skinThickness" placeholder="SkinThickness. . .">
 					<span></span>
 					<label>SkinThickness</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="Insulin" placeholder="Insulin. . .">
+					<input type="number" name="Insulin" id="id_insulin" value="insulin" placeholder="Insulin. . .">
 					<span></span>
 					<label>Insulin</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="BMI" placeholder="BMI. . .">
+					<input type="number" name="BMI" id="id_bmi" value="bmi" placeholder="BMI. . .">
 					<span></span>
 					<label>BMI</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction. . .">
+					<input type="number" name="DiabetesPedigreeFunction" id="id_diabetesPedigreeFunction" value="diabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction. . .">
 					<span></span>
 					<label>DiabetesPedigreeFunction</label>
 				</div>
 
 				<div class="inp-form">
-					<input type="number" name="Age" placeholder="Age. . .">
+					<input type="number" name="Age" id="id_age" value="age" placeholder="Age. . .">
 					<span></span>
 					<label>Age</label>
 				</div>
 
 				<!-- proses submit -->
-           		<button type="submit" name="submit">Process</button>
+           		<button type="button" name="submit" onclick="process()">Process</button>
 			</form>
 		</div>
 
 		<div class="d-flex-col">
 			<span class="txt-outcome">Outcome:</span>
 			<div class="container">
-				<div class="outcomebx">&nbsp;</div>
+				<div class="outcomebx"><p id="out_input_pregnancies"></p></div>
 			</div>	
 		</div>
 	</div>
+
+	<script src="script.js"></script>
 	
 </body>
 </html>

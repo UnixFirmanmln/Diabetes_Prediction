@@ -1,0 +1,40 @@
+{
+    "init_params": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 100,
+        "multi_class": "auto",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+    },
+    "params": {
+        "intercept": [
+            -5.4588759067073
+        ],
+        "coefficient": [
+            [
+                0.961841714635369,
+                4.3792215159839145,
+                -0.5630785420755008,
+                0.26782390376972703,
+                -0.2758774625488156,
+                3.3224032666260106,
+                1.1309811021541274,
+                1.7167457502276071
+            ]
+        ],
+        "classes": [
+            0,
+            1
+        ]
+    }
+}

@@ -118,7 +118,7 @@ button
 	margin: 0 0 1cm 2cm;
 }
 
-button[type="submit"]
+button[type="button"]
 {
   	width: 60%;
   	height: 40px;
@@ -132,7 +132,7 @@ button[type="submit"]
   	outline: none;
 }
 
-button[type="submit"]:hover
+button[type="button"]:hover
 {
   	border-color: #2691d9;
   	transition: .5s;
