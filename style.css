@@ -149,3 +149,13 @@ button[type="button"]:hover
 {
 	height: 7cm;
 }
+
+.outcomebx h3
+{
+	margin: 1cm 0 0 1cm;
+}
+
+.outcomebx p
+{
+	margin: 10px 0 0 1cm;
+}
