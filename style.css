@@ -148,14 +148,21 @@ button[type="button"]:hover
 .outcomebx
 {
 	height: 7cm;
-}
-
-.outcomebx h3
-{
-	margin: 1cm 0 0 1cm;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 13px 13px 17px rgb(0 0 0 / 9%);
 }
 
 .outcomebx p
 {
-	margin: 10px 0 0 1cm;
+	position: relative;
+	font-weight: 550;
+	font-size: 23px;
+}
+
+.outcomebx p:hover
+{
+	transition: .5s ease-in;
+	color: blue;
 }
