@@ -8,9 +8,10 @@ function predict(input) {
   fetch('diabetes_model.json')
     .then(response => response.json())
     .then(jsonData => {
+      const scales = jsonData['scale_data'];
       const params = jsonData['params'];
-
-      const input_with_bias = [1, ...input];
+      const scaledInput = input.map((value, index) => value * scales[index]);
+      const input_with_bias = [1, ...scaledInput];
 
       let weights = [];
       weights.push(params['intercept'][0]);

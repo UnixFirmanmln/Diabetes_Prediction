@@ -1,21 +1,14 @@
 {
-    "init_params": {
-        "C": 1.0,
-        "class_weight": null,
-        "dual": false,
-        "fit_intercept": true,
-        "intercept_scaling": 1,
-        "l1_ratio": null,
-        "max_iter": 100,
-        "multi_class": "auto",
-        "n_jobs": null,
-        "penalty": "l2",
-        "random_state": null,
-        "solver": "lbfgs",
-        "tol": 0.0001,
-        "verbose": 0,
-        "warm_start": false
-    },
+    "scale_data": [
+        0.058823529411764705,
+        0.005025125628140704,
+        0.00819672131147541,
+        0.010101010101010102,
+        0.001182033096926714,
+        0.01490312965722802,
+        0.4269854824935952,
+        0.016666666666666666
+    ],
     "params": {
         "intercept": [
             -5.4588759067073
